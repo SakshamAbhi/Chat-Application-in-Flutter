@@ -1,0 +1,47 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --target lib\main.dart -d 332514be0604 --dart-define=flutter.inspector.structuredErrors=true --start-paused --web-server-debug-protocol ws --web-server-debug-backend-protocol ws --web-allow-expose-url
+
+## exception
+
+SocketException: SocketException: OS Error: A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied.
+, errno = 10057, address = 127.0.0.1, port = 54536
+
+```
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 1.22.5, on Microsoft Windows [Version 10.0.18363.1256], locale en-US)
+    • Flutter version 1.22.5 at C:\src\flutter
+    • Framework revision 7891006299 (7 weeks ago), 2020-12-10 11:54:40 -0800
+    • Engine revision ae90085a84
+    • Dart version 2.10.4
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.3)
+    • Android SDK at C:\Users\RS\AppData\Local\Android\Sdk
+    • Platform android-30, build-tools 30.0.3
+    • ANDROID_HOME = C:\Users\RS\AppData\Local\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+    • All Android licenses accepted.
+
+[!] Android Studio (version 4.1.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+
+[✓] VS Code (version 1.52.1)
+    • VS Code at C:\Users\RS\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.18.1
+
+[✓] Connected device (1 available)
+    • Redmi Note 4 (mobile) • 332514be0604 • android-arm64 • Android 7.0 (API 24)
+
+! Doctor found issues in 1 category.
+```
